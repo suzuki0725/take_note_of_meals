@@ -13,6 +13,11 @@
 ActiveRecord::Schema.define(version: 20200904074310) do
 
   create_table "blogs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "maindish",   null: false
+    t.string   "sidedish",   null: false
+    t.string   "snack"
+    t.string   "alcohol"
+    t.string   "full_meter", null: false
     t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
