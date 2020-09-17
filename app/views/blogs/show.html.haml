@@ -1,0 +1,19 @@
+%p
+  = @blog.start_time
+%p
+  %strong 主食
+  = @blog.maindish
+%p
+  %strong おかず
+  = @blog.sidedish
+%p
+  %strong おやつ
+  = @blog.snack
+%p
+  %strong お酒
+  = @blog.alcohol
+%p 
+  %strong 満腹メーター
+  = @blog.full_meter
+
+= link_to 'back',blogs_path

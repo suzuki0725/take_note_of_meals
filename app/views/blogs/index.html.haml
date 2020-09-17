@@ -1,4 +1,11 @@
-%h1 食事のメモアプリ
+%h1 体重が10%減るアプリ
+
+= link_to new_blog_path do
+  %span.meals 今日の食事を記録する
 
 = month_calendar events: @blogs do |date,blogs|
   = date.day
+
+  - blogs.each do |blog|
+    %li.meals
+      = link_to blog.maindish,blog,{class: "mealslist"}
