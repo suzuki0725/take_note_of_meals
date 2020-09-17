@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
   end
 
   def create
-    Blog.create(blog_parameter)
+    Blog.create(blog_params)
     redirect_to blogs_path
   end
 
@@ -20,8 +20,8 @@ class BlogsController < ApplicationController
 
   private
 
-  def blog_parameter
-    parameter.require(:blog).permit(:title, :content, :start_time)
+  def blog_params
+    params.require(:blog).permit(:maindish, :sidedish, :snack, :alcohol, :full_meter,:start_time)
   end
 
 
