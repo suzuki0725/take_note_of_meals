@@ -7,9 +7,11 @@
       分
     %h3.blogs-contents
       主食
-      = f.text_field :maindish,class: "form-maindish",required: "required"
+      = f.text_field :maindish,class: "form-maindish"
     %h3.blogs-contents
       おかず
+      = f.text_field :sidedish
+      = f.text_field :sidedish
       = f.text_field :sidedish
     %h3.blogs-contents
       おやつ
@@ -23,3 +25,4 @@
     
     %h3.submit
       = f.submit '記録する',class: "submit-btn"
+  = link_to 'トップページへ戻る', blogs_path,class: 'return-btn'

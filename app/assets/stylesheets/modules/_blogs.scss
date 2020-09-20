@@ -1,9 +1,15 @@
 * {
   box-sizing: border-box;
 }
-h1{
-  font-size: 30px;
+a{
+  cursor: pointer;
+  color: #0000EE;
 }
+.index{
+  font-size: 30px;
+  text-align: center;
+}
+
 .calendar-heading{
   text-align: center;
 }
@@ -12,4 +18,5 @@ h1{
 }
 .mealslist{
   text-decoration: none;
+  color: #0000EE;
 }
