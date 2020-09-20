@@ -10,14 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200904074310) do
+ActiveRecord::Schema.define(version: 2020_09_04_074310) do
 
-  create_table "blogs", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "maindish",   null: false
-    t.string   "sidedish",   null: false
-    t.string   "snack"
-    t.string   "alcohol"
-    t.string   "full_meter", null: false
+  create_table "blogs", id: :integer, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "maindish"
+    t.string "sidedish"
+    t.string "snack"
+    t.string "alcohol"
+    t.string "full_meter", null: false
     t.datetime "start_time"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
